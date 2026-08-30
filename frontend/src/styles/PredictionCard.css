@@ -1,0 +1,85 @@
+.prediction-card {
+    background-color: rgba(15, 23, 42, 0.8);
+    padding: 1.5rem;
+    border: 1px solid rgba(59, 130, 246, 0.45);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.prediction-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    
+}
+
+.prediction-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.prediction-card p {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.prediction-card .status {
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 0.4rem;
+}
+
+.prediction-card .status.pending {
+    background-color: #FACC15;
+    color: #78350F;
+}
+
+.prediction-card .status.won {
+    background-color: #22C55E;
+    color: #14532D;
+}
+
+.prediction-card .status.lost {
+    background-color: #EF4444;
+    color: #7F1D1D;
+}
+
+.prediction-card-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.prediction-card button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.prediction-card-buttons button:first-child {
+    background-color: #2563EB;
+}
+
+.prediction-card-buttons button:first-child:hover {
+    background-color: #1D4ED8;
+    transform: translateY(-2px);
+}
+
+.prediction-card-buttons button:last-child {
+    background-color: #EF4444;
+}
+
+.prediction-card-buttons button:last-child:hover {
+    background-color: #DC2626;
+    transform: translateY(-2px);
+}

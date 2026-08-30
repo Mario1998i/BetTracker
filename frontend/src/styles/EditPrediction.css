@@ -1,0 +1,82 @@
+.edit-form {
+    background-color: rgba(15, 23, 42, 0.75);
+    width: 90%;
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border: 1px solid rgba(59, 130, 246, 0.45);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-form h1 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+}
+
+.edit-form label {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-form input,
+.edit-form textarea {
+    padding: 0.75rem;
+    border: 1px solid rgba(59, 130, 246, 0.45);
+    border-radius: 0.5rem;
+    background-color: rgba(15, 23, 42, 0.5);
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.edit-form textarea {
+    resize: none;
+}
+
+.form-error {
+    color: #F87171;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: -1rem 0 1.5rem;
+}
+
+.edit-form input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.edit-form button {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    background-color: #22D3EE;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+
+.edit-form button:hover {
+    background-color: #06B6D4;
+    transform: translateY(-2px);
+    box-shadow: 0 9px 12px rgba(0, 0, 0, 0.2);
+}
+
+.edit-form button:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 600px) {
+    .edit-form {
+        padding: 2rem 1.5rem;
+    }
+
+    .edit-form h1 {
+        font-size: 1.7rem;
+    }
+}

@@ -1,0 +1,123 @@
+.home {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.glow-point {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #60A5FA;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(96, 165, 250, 0.6);
+    top: 40%;
+    left: 8%;
+}
+
+.glow-point-small {
+    width: 4px;
+    height: 4px;
+    top: 68%;
+    left: 19%;
+    box-shadow: 0 0 10px 3px rgba(96, 165, 250, 0.5);
+}
+
+.glow-point-large {
+    width: 8px;
+    height: 8px;
+    top: 45%;
+    left: 85%;
+    box-shadow: 0 0 20px 7px rgba(96, 165, 250, 0.7);
+}
+
+.hero {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 2rem 1.5rem;
+    background-color: rgba(15, 23, 42, 0.75);
+    border: 1px solid rgba(59, 130, 246, 0.45);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.sport-silhouette {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.13;
+    filter: brightness(0.5) sepia(1) hue-rotate(175deg) saturate(4);
+}
+
+.football {
+    width: 280px;
+    left: 2%;
+    bottom: 18%;
+}
+
+.basketball {
+    width: 250px;
+    right: 2%;
+    bottom: 18%;
+}
+
+
+@media (max-width: 700px) {
+    .features {
+        flex-direction: column;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 550px) {
+    .glow-point {
+        display: none;
+    }
+
+    .football,
+    .basketball {
+        display: none;
+    }
+}

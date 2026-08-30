@@ -1,0 +1,66 @@
+.predictions-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.predictions-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.predictions-page button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    background-color: #2563EB;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.predictions-page button:hover {
+    background-color: #1D4ED8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.predictions-page button:active {
+    transform: translateY(1px);
+}
+
+.predictions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.prediction {
+    background-color: #1F2937;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.prediction h3 {
+    margin-bottom: 1rem;
+}
+
+.prediction p {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+    .predictions-page {
+        padding: 1rem;
+    }
+
+    .predictions-page h1 {
+        font-size: 1.7rem;
+    }
+}
