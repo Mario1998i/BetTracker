@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate, Link} from "react-router-dom";
 import "../styles/Register.css";
+import userNeon from "../assets/user-neon.mp4";
 
 export default function Register({ setToast}) {
     const [username, setUsername] = useState("");
@@ -80,7 +81,7 @@ export default function Register({ setToast}) {
     return (
         <main className="register-page">
             <div className="register-decoration">
-                <video src="/src/assets/user-neon.mp4" autoPlay loop muted playsInline disablePictureInPicture/>
+                <video src={userNeon} autoPlay loop muted playsInline disablePictureInPicture/>
             </div>
             <form className="register-card" onSubmit={handleSubmit}>
                 <h1>Register</h1>
