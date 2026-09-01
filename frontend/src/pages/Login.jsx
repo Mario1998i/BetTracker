@@ -27,7 +27,7 @@ export default function Login ({ setToast }) {
 
         const jsonLogin = JSON.stringify(loginData);
 
-        const response = await fetch("http://localhost:8000/api/login.php", {
+        const response = await fetch("http://bettracker0.freepage.cc/api/login.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
