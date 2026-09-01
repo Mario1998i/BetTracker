@@ -27,7 +27,7 @@ export default function Login ({ setToast }) {
 
         const jsonLogin = JSON.stringify(loginData);
 
-        const response = await fetch("http://bettracker0.freepage.cc/api/login.php", {
+        const response = await fetch("https://bettracker0.freepage.cc/api/login.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -58,7 +58,7 @@ export default function Login ({ setToast }) {
 
     useEffect(() => {
         async function checkSession() {
-            const response = await fetch("http://bettracker0.freepage.cc/api/checkSession.php", {
+            const response = await fetch("https://bettracker0.freepage.cc/api/checkSession.php", {
                 credentials: "include"
             })
 
