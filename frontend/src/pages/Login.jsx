@@ -58,7 +58,7 @@ export default function Login ({ setToast }) {
 
     useEffect(() => {
         async function checkSession() {
-            const response = await fetch("http://localhost:8000/api/checkSession.php", {
+            const response = await fetch("http://bettracker0.freepage.cc/api/checkSession.php", {
                 credentials: "include"
             })
 
