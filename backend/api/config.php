@@ -8,6 +8,7 @@ try {
     $pdo = new PDO($dsn, $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
+    error_log("DB ERROR: " . $e->getMessage());
     die("Connessione al database fallita.");
 }
 ?>
