@@ -57,7 +57,7 @@ export default function NewPrediction({ setToast }) {
             return;
         }
 
-        const response = await fetch("http://localhost:8000/api/createPrediction.php", {
+        const response = await fetch("https://bettracker-production-893c.up.railway.app/api/createPrediction.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

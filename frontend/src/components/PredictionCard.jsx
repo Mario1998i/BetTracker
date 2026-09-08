@@ -9,7 +9,7 @@ export default function PredictionCard({ prediction, getPredictions, setToast })
     }
 
     async function handleDelete() {
-        const response = await fetch("http://localhost:8000/api/deletePrediction.php", {
+        const response = await fetch("https://bettracker-production-893c.up.railway.app/api/deletePrediction.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

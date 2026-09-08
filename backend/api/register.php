@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:5173");
+header("Access-Control-Allow-Origin: https://bettracker0.netlify.app");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Credentials: true");
@@ -12,16 +12,9 @@ $data = file_get_contents("php://input");
 
 $user = json_decode($data);
 
-
-
-$dsn = "mysql:host=localhost;dbname=bettracker";
-$username = "root";
-$password = "";
+require_once __DIR__ . "/config.php";
 
 try {
-    $pdo = new PDO($dsn, $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
     $sql = "SELECT id FROM users WHERE email = :email";
     $stmt = $pdo->prepare($sql);
 

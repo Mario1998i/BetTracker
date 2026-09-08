@@ -8,7 +8,7 @@ export default function Predictions({ setToast }) {
     const navigate = useNavigate();
 
     async function handleLogout() {
-        const response = await fetch("http://localhost:8000/api/logout.php", {
+        const response = await fetch("https://bettracker-production-893c.up.railway.app/api/logout.php", {
             credentials: "include"
         });
 
@@ -24,7 +24,7 @@ export default function Predictions({ setToast }) {
     }
 
     async function getPredictions() {
-        const response = await fetch("http://localhost:8000/api/getAllPredictions.php", {
+        const response = await fetch("https://bettracker-production-893c.up.railway.app/api/getAllPredictions.php", {
             credentials: "include"
         });
 

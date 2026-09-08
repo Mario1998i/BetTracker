@@ -41,7 +41,7 @@ export default function Register({ setToast}) {
         const jsonUser = JSON.stringify(user);
 
 
-        const response = await fetch("http://localhost:8000/api/register.php", {
+        const response = await fetch("https://bettracker-production-893c.up.railway.app/api/register.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -66,7 +66,7 @@ export default function Register({ setToast}) {
 
     useEffect(() => {
         async function checkSession() {
-            const response = await fetch("http://localhost:8000/api/checkSession.php", {
+            const response = await fetch("https://bettracker-production-893c.up.railway.app/api/checkSession.php", {
                 credentials: "include"
             })
             const result = await response.text();

@@ -17,7 +17,7 @@ export default function EditPrediction({ setToast }) {
     const [errors, setErrors] = useState({});
 
     async function getPrediction() {
-        const response = await fetch(`http://localhost:8000/api/getPrediction.php?id=${id}`, {
+        const response = await fetch(`https://bettracker-production-893c.up.railway.app/api/getPrediction.php?id=${id}`, {
             credentials: "include"
         })
 
@@ -75,7 +75,7 @@ export default function EditPrediction({ setToast }) {
             return;
         }
 
-        const response = await fetch("http://localhost:8000/api/updatePrediction.php", {
+        const response = await fetch("https://bettracker-production-893c.up.railway.app/api/updatePrediction.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
