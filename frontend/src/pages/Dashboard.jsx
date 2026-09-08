@@ -8,7 +8,7 @@ export default function Dashboard ({ setToast }) {
     const [predictions, setPredictions] = useState([]);
 
     async function handleLogout() {
-        const response = await fetch("http://localhost:8000/api/logout.php", {
+        const response = await fetch("https://bettracker-production-893c.up.railway.app/api/logout.php", {
             credentials: "include"
         }) 
 
@@ -23,7 +23,7 @@ export default function Dashboard ({ setToast }) {
     }
 
     async function getPredictions() {
-        const response = await fetch("http://localhost:8000/api/getPredictions.php", {
+        const response = await fetch("https://bettracker-production-893c.up.railway.app/api/getPredictions.php", {
             credentials: "include"
         });
 
@@ -34,7 +34,7 @@ export default function Dashboard ({ setToast }) {
 
     useEffect(() => {
         async function checkSession() {
-            const response = await fetch("http://localhost:8000/api/checkSession.php", {
+            const response = await fetch("https://bettracker-production-893c.up.railway.app/api/checkSession.php", {
             credentials: "include"
             });
 
